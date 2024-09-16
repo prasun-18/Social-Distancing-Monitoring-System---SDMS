@@ -137,5 +137,5 @@ set ```Thread = True``` in the config.
 - Other trained model weights from official doc: https://pjreddie.com/darknet/yolo/
 
 ---
-## Thanks for the read & have fun!
+### Thanks for the reading & have fun!
 
