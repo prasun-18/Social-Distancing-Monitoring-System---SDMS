@@ -1,4 +1,6 @@
-# Social-Distancing-in-Real-Time
+# Social-Distance-Monitoring-in-Real-Time
+
+Access the publication here: (https://lnkd.in/gScQW75u)
 Social distancing in Real-Time using live video stream/IP camera in OpenCV.
 
 > This is an improvement/modification to (https://www.pyimagesearch.com/2020/06/01/opencv-social-distancing-detector/).
@@ -38,10 +40,9 @@ Output       |  Output
 ## Running Inference
 - Install all the required Python dependencies:
 ```
-pip install imutils scipy numpy opencv-python
+  pip install imutils scipy numpy opencv-python
 
-
-```
+``
 - If you would like to use GPU, set ```USE_GPU = True``` in the config. options at 'mylib/config.py'.
 
 - Note that you need to build OpenCV with CUDA (for an NVIDIA GPU) support first:
@@ -106,6 +107,5 @@ set ```Thread = True``` in the config.
 - Other trained model weights from official doc: https://pjreddie.com/darknet/yolo/
 
 ---
-
 ## Thanks for the read & have fun!
 
