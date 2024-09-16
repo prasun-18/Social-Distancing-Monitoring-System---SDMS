@@ -67,7 +67,7 @@ Our approach uses artificial intelligence tools such as deep learning and comput
 ```
   pip install imutils scipy numpy opencv-python
 
-``'
+```
 - If you would like to use GPU, set ```USE_GPU = True``` in the config. options at 'mylib/config.py'.
 
 - Note that you need to build OpenCV with CUDA (for an NVIDIA GPU) support first:
@@ -85,11 +85,9 @@ python run.py -i (address of video files) mylib/videos/test.mp4
 - To run inference on an IP camera, Setup your camera url in 'mylib/config.py':
 
 ```
-# Enter the ip camera url (e.g., url = 'http://191.178.0.100:8040/video')
-url = ''
-```
+- Enter the ip camera url ```(e.g., url = 'http://191.178.0.100:8040/video')```
+-url = ''
 - Then run with the command:
-
 ```
 python run.py
 ```
