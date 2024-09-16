@@ -102,7 +102,7 @@ The following are examples of the added features. Note: You can easily on/off th
 - This is pretty useful considering the COVID-19 scenario.
 
 ---
-## Note: To setup the sender email, please refer the instructions inside 'mylib/mailer.py'. Setup receiver email in the config.
+### Note: To setup the sender email, please refer the instructions inside 'mylib/mailer.py'. Setup receiver email in the config.
 
 ---
 ### 2. Threading:
