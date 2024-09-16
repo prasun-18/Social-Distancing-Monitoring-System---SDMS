@@ -5,19 +5,44 @@ Social distancing in Real-Time using live video stream/IP camera in OpenCV.
 
 > This is an improvement/modification to (https://www.pyimagesearch.com/2020/06/01/opencv-social-distancing-detector/).
 
-> Please refer to the added [Features](#features).
-
-Output       |  Output
-:-------------------------:|:-------------------------:
-![Output](mylib/videos/output.gif?raw=true "Output")  |  ![Output](mylib/videos/output1.gif?raw=true "Output")
-
-- Use case: counting the number of people in the stores/buildings/shopping malls etc., in real-time.
+---
+### Use case: 
+- counting the number of people in the stores/buildings/shopping malls etc., in real-time.
+- It can also be implemented in the exam hall when invigilator is busy during answer sheet check-up.
 - Sending an alert to the staff if the people are way over the social distancing limits.
 - Optimizing the real-time stream for better performance (with threading).
-- Acts as a measure to tackle COVID-19.
+- Acts as a tackle measure in mediacl feild for diseases such as COVID-19, Ebola, Tuberculosis (TB).
+- Acts as a tackle measure during time of curfew.
 
 ---
+## Proposed System
+Our approach uses artificial intelligence tools such as deep learning and computer vision to track people in different environments and measure adherence to social distancing guidelines and can give notifications each time social distancing rules are violated also known as Smart Distancing. We have built a Machine Learning based model which utilizes OpenCV computer vision framework to monitor if the social distancing is being maintained by the persons detected in the frame. There are three level of detection red, yellow and green. When persons are maintaining minimum physical distancing then the detected boxes are green indicating that its safe. When the persons are getting closer to the minimum distance to be maintained then it turns yellow, finally the boxes turn red if the persons are violating the minimum physical distancing. The project is dynamic and can be customized to run on a variety of inputs, it can take any video as input file, it can take input from the webcam of the laptop and also it can take input from a CCTV camera using its IP address and produce the real time output. The project also sends an alert email and rings an alarm bell when the violations exceed a certain threshold. The project produces output with high accuracy while still leaving some room for future developments.
 
+---
+## Hardware Requirement
+
+| Component       | Specification                         |
+|-----------------|---------------------------------------|
+| Processor       | Any Processor above 500MHz, preferably an Intel Core i7 7th Gen |
+| RAM             | 8GB                                   |
+| Hard Disk       | 50GB, preferably an SSD               |
+| Input Device    | Standard Keyboard, Mouse, and Camera  |
+| Output Device   | VGA and High-Resolution Monitor        |
+| Internet        | Internet connection is required to send email alerts |
+
+---
+## Software Requirement
+
+| Component          | Specification                                                      |
+|--------------------|--------------------------------------------------------------------|
+| Operating System   | Windows 10                                                         |
+| IDE                | Any Python IDE with installed libraries                            |
+| Python             | Python 3                                                           |
+| Python Libraries   | OpenCV, Scikit-learn, NumPy, Argparse, Imutils, Winsound, Smtplib, SSL, OS, Time |
+
+
+
+---
 ## Table of Contents
 * [Simple Theory](#simple-theory)
 * [Running Inference](#running-inference)
@@ -42,7 +67,7 @@ Output       |  Output
 ```
   pip install imutils scipy numpy opencv-python
 
-``
+``'
 - If you would like to use GPU, set ```USE_GPU = True``` in the config. options at 'mylib/config.py'.
 
 - Note that you need to build OpenCV with CUDA (for an NVIDIA GPU) support first:
@@ -55,12 +80,12 @@ Output       |  Output
 
 - To run inference on a test video file, head into the directory/use the command:
 ```
-python run.py -i mylib/videos/test.mp4
+python run.py -i (address of video files) mylib/videos/test.mp4
 ```
 - To run inference on an IP camera, Setup your camera url in 'mylib/config.py':
 
 ```
-# Enter the ip camera url (e.g., url = 'http://191.138.0.100:8040/video')
+# Enter the ip camera url (e.g., url = 'http://191.178.0.100:8040/video')
 url = ''
 ```
 - Then run with the command:
