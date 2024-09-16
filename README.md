@@ -78,14 +78,16 @@ python run.py -i (address of video files) mylib/videos/test.mp4
 ```
 - To run inference on an IP camera, Setup your camera url in 'mylib/config.py':
 
-```
+
 - Enter the ip camera url
 ```(e.g., url = 'http://191.178.0.100:8040/video') # Change with your IP address of camera/IP cam app of the phone```
 -url = ''
+
 - Then run with the command:
 ```
 python run.py
 ```
+
 - Set url = 0 for webcam.
 
 ---
