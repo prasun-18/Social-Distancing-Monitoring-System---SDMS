@@ -74,7 +74,7 @@ Our approach uses artificial intelligence tools such as deep learning and comput
 
 - To run inference on a test video file, head into the directory/use the command:
 ```
-python run.py -i (address of video files) mylib/videos/test.mp4
+python main.py -i (address of video files) mylib/videos/test.mp4
 ```
 - To run inference on an IP camera, Setup your camera url in 'mylib/config.py':
 
